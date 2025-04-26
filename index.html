@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Especialistas em conserto de notebooks, desktops, consoles e otimização de performance. Agendamento rápido pelo WhatsApp.">
+  <meta name="keywords" content="manutenção de notebooks, upgrade de PC gamer, conserto de consoles, otimização de computadores, reparo de videogames, assistência técnica especializada">
+  <meta property="og:title" content="Spartan MultiAssistência | Conserto e Otimização">
+  <meta property="og:description" content="Seu PC, console ou notebook com performance máxima. Atendimento especializado e agendamento fácil pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.spartanmultiassistencia.com.br">
+  <meta property="og:image" content="https://www.spartanmultiassistencia.com.br/logo.png">
+  <title>Spartan MultiAssistência | Conserto e Otimização</title>
+  <style>
+    body {
+      background: #121212;
+      color: #FFD700;
+      text-shadow: 1px 1px 2px #000;
+    }
+    header {
+      background: #1a1a1a;
+      color: #FFD700;
+      text-shadow: 1px 1px 2px #000;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 5rem;
+    }
+    header img {
+      max-width: 300px;
+      margin-bottom: 1rem;
+      animation: pulseLogo 2s infinite;
+    }
+    header p {
+      font-size: 3.5rem;
+    }
+    @keyframes pulseLogo {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.1); opacity: 0.85; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    .cta {
+      background: #1e1e1e;
+      padding: 2rem;
+      text-align: center;
+    }
+    .cta h2 {
+      color: #FFD700;
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .cta p {
+      color: #FFD700;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .cta img {
+      max-width: 90%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .whatsapp-button {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #25D366;
+      color: white;
+      padding: 2rem 3rem;
+      font-size: 2.5rem;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .whatsapp-button:hover {
+      background: #1ebc59;
+    }
+    .whatsapp-button img {
+      height: 35px;
+      width: 35px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      font-size: 1rem;
+    }
+    .whatsapp-float img {
+      height: 20px;
+      width: 20px;
+    }
+    .services {
+      background: #1e1e1e;
+      padding: 2rem;
+      text-align: center;
+    }
+    .services h3 {
+      font-size: 3.5rem;
+      color: #FFD700;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .services h2 {
+      font-size: 2rem;
+      color: #FFD700;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .services ul {
+      list-style: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+    .services li {
+      margin: 0.5rem 0;
+      color: #FFD700;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .services img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1.5rem;
+      border-radius: 8px;
+    }
+    .reviews {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      text-shadow: none;
+    }
+    .reviews h3 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+    }
+    .carousel {
+      position: relative;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      overflow: hidden;
+    }
+    .carousel-inner {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 300%;
+    }
+    .carousel-inner > .review {
+      min-width: 100%;
+    }
+    .review {
+      flex: 0 0 100%;
+      padding: 1rem;
+      border-left: 4px solid #25D366;
+      background: #fff;
+    }
+    .review p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 1rem;
+    }
+    .pulsate {
+      animation: pulse 1.5s infinite;
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+  </style>
+</head>
+<body>
+</body>
+</html>
+
+
+  <header>
+    <div style="text-align:center;">
+      <img src="logo.png" alt="Logo Spartan">
+    </div>
+    <div style="text-align: center;">
+      <h1 style="color: #FFD700; text-shadow: 1px 1px 2px #000;">Spartan MultiAssistência</h1>
+      <p style="color: #FFD700; text-shadow: 1px 1px 2px #000;">Transparência, Preço Justo e Agilidade.</p>
+  
+      <h2 style="color: #FFD700; text-shadow: 1px 1px 2px #000;">DESDE 2008 - 17 ANOS</h2>
+    </div>
+  </header>
+  
+  
+
+  <section class="cta">
+    <h2>Seu PC Gamer, notebook ou console com performance máxima</h2>
+    <p>Serviço rápido, com peças de qualidade e agendamento direto pelo WhatsApp.</p>
+    <img src="notebook.png" alt="Notebook mostrando o site da Spartan MultiAssistência">
+    <div style="text-align:center; margin-top: 1rem;">
+  <div style="text-align:center; margin-top: 1rem;">
+  <a href="https://wa.me/552131741531" class="whatsapp-button pulsate" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp"> Falar no WhatsApp
+  </a>
+</div>
+</div>
+  </section>
+
+  <section class="services" style="color: #FFD700; text-shadow: 1px 1px 2px #000;">
+    <h3>Serviços Para Desktop, Notebook e Macbook</h3>
+    <ul>
+      <li>Montagem de PC Gamer Customizado</li>
+      <li>Configuração de BIOS Para Melhorar o Desempenho</li>
+      <li>Instalação de WaterCooler</li>
+      <li>Troca de Gabinete Gamer</li>
+      <li>Upgrade De Placa De Vídeo</li>
+      <li>Limpeza Preventiva e Corretiva</li>
+      <li>Limpeza Premium com Troca de Pasta Térmica Silver</li>
+      <li>Otimização e Formatação</li>
+      <li>Reparo de Carcaça De Notebook</li>
+      <li>Atualização de Hardware</li>
+      <li>Correções de Inicialização De Sistema Operacional</li>
+      <li>Upgrade em Notebook</li>
+      <li>Upgrade para SSD, 20x Mais Rápido Do Que um HDD Comum.</li>
+      <li>Upgrade de Memória</li>
+      <li>Instalação de Programas</li>
+      <li>Reparo Avançado em Notebook</li>
+      <li>Troca de Dobradiça de Notebook</li>
+      <li>Troca de Placa Mãe De Notebook</li>
+      <li>Troca de Tela de Notebook</li>
+      <li>Troca de Carcaça de Notebook</li>
+      <li>Troca de Teclado de Notebook</li>
+      <li>Troca de Bateria de Notebook</li>
+    </ul>
+  </section>
+  
+  <section class="services" style="color: #FFD700; text-shadow: 1px 1px 2px #000;">
+    <h3>Serviços Para VideoGames/Consoles</h3>
+    <h2>Playstation 3, Playstation 4, Playstation 5, Xbox One, Xbox Series S e X, Nintendo Switch Lite, V1, V2 e OLED</h2>
+    <ul>
+      <li>USB com Defeito.</li>
+      <li>HDMI com Defeito.</li>
+      <li>Superaquecimento.</li>
+      <li>Lentidão ou Travamento.</li>
+      <li>Falhas na leitura de discos.</li>
+      <li>Problemas de energia.</li>
+      <li>Problemas com o modo de repouso.</li>
+      <li>Falhas na fonte de alimentação interna.</li>
+      <li>Defeitos no HDD.</li>
+      <li>Ejetando Discos.</li>
+      <li>Problemas na Placa Mãe.</li>
+      <li>Joystick/Controle com Analógico Ruim/Drift.</li>
+      <li>Joystick/Controle Botões Travando.</li>
+    </ul>
+  </section>
+  
+  <section class="cta" style="color: #FFD700; text-shadow: 1px 1px 2px #000;">
+    <h2>Atendimento personalizado</h2>
+    <p>Desde de 2008 Com Mais de 17 Anos De Experiência E Mais de 11000 Aparelhos Consertados.</p> Transparência, Preço Justo e Agilidade.</p>
+    <img src="equipe.png" alt="Equipe técnica especializada" style="max-width: 90%; height: auto; margin: 1rem 0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <div style="text-align:center; margin-top: 1rem;">
+      <a href="https://wa.me/552131741531" class="whatsapp-button pulsate" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp"> Chamar no WhatsApp
+      </a>
+    </div>
+  </section>
+  
+
+  <section class="reviews">
+  <h3>O que nossos clientes dizem</h3>
+  <div style="max-width: 100%; margin: 0 auto;">
+    <!-- Elfsight Google Reviews Widget -->
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-db062987-2743-4003-bd18-267285bb7ede" data-elfsight-app-lazy></div>
+  </div>
+</section>
+
+  <section style="background: #1a1a1a; color: #fff; text-align: center; padding: 2rem;">
+    <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Contato</h2>
+    <a href="https://wa.me/552131741531" class="whatsapp-button pulsate" target="_blank" style="background: #8dc63f; font-size: 1.2rem; padding: 1rem 2rem; margin-bottom: 1rem;">
+      Chamar no Whatsapp
+    </a>
+    <p>Tel: (21) 3174-1531</p>
+    <p>Email: <a href="mailto:falconosco@spartanma.com.br" style="color: #fff; text-decoration: underline;">faleconosco@spartanma.com.br</a></p>
+    <p>
+      Endereço:<br>
+      Norte Shopping<br>
+      Av. Dom Helder Câmara, Número 5474 - Loja 1206<br>
+      Estacionamento Gandavo - Ao Lado da Cobasi<br>
+      Rio de Janeiro, RJ<br>
+      CEP: 20771-004
+    </p>
+    <iframe src="https://www.google.com/maps?q=Spartan+Geek+Multi+Assistência&output=embed" width="100%" height="300" style="border:0; border-radius: 12px; margin-top: 1rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <p>© 2025 por Spartan MultiAssistência. Todos os direitos reservados.</p>
+  </footer>
+
+  <a href="https://wa.me/552131741531" class="whatsapp-float pulsate" target="_blank">
+    <img src="whatsapp.png" alt="WhatsApp"> Atendimento Rápido
+  </a>
+</body>
+</html>
