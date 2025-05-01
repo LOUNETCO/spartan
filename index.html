@@ -196,9 +196,33 @@
       70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
       100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
+    .cta, .services, .reviews {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
   </style>
 </head>
 <body>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('.cta, .services, .reviews').forEach(section => {
+    ScrollTrigger.create({
+      trigger: section,
+      start: 'top 80%',
+      onEnter: () => section.classList.add('animate')
+    });
+  });
+</script>
+
 </body>
 </html>
 
@@ -223,7 +247,7 @@
     <img src="notebook.png" alt="Notebook mostrando o site da Spartan MultiAssistência">
     <div style="text-align:center; margin-top: 1rem;">
   <div style="text-align:center; margin-top: 1rem;">
-  <a href="https://wa.me/552131741531" class="whatsapp-button pulsate" target="_blank">
+  <a href="https://wa.me/552131741531?text=Olá%2C%20gostaria%20de%20um%20atendimento%20para%20Macbook%20e%20iMac.%20Vim%20pelo%20Google." class="whatsapp-button pulsate" target="_blank">
     <img src="whatsapp.png" alt="WhatsApp"> Atendimento para Macbook & iMac
   </a>
 </div>
@@ -252,7 +276,7 @@
     
       <section class="cta">
         <div style="margin-top: 2rem;">
-          <a href="https://wa.me/552131741531" class="whatsapp-button pulsate" target="_blank">
+          <a href="https://wa.me/552131741531?text=Olá%2C%20gostaria%20de%20um%20atendimento%20para%20Desktop%20e%20Notebook.%20Vim%20pelo%20Google." class="whatsapp-button pulsate" target="_blank">
             <img src="whatsapp.png" alt="WhatsApp"> Atendimento para Desktop & Notebook
           </a>
         </div>
@@ -282,7 +306,7 @@
     
       <section class="cta">
         <div style="margin-top: 2rem;">
-          <a href="https://wa.me/552131741531" class="whatsapp-button pulsate" target="_blank">
+          <a href="https://wa.me/552131741531?text=Olá%2C%20gostaria%20de%20um%20atendimento%20para%20Videogames%20e%20Controles.%20Vim%20pelo%20Google." class="whatsapp-button pulsate" target="_blank">
             <img src="whatsapp.png" alt="WhatsApp"> Atendimento para VídeoGame & Controles
           </a>
         </div>
@@ -379,5 +403,19 @@
   <a href="https://wa.me/552131741531" class="whatsapp-float pulsate" target="_blank">
     <img src="whatsapp.png" alt="WhatsApp"> Atendimento Rápido
   </a>
+
+<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+  gsap.utils.toArray('.cta, .services, .reviews').forEach(section => {
+    ScrollTrigger.create({
+      trigger: section,
+      start: 'top 80%',
+      onEnter: () => section.classList.add('animate')
+    });
+  });
+</script>
+
 </body>
 </html>
