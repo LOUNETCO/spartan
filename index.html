@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-715211596">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-715211596');
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Especialistas em conserto de notebooks, desktops, consoles e otimização de performance. Agendamento rápido pelo WhatsApp.">
@@ -21,11 +11,29 @@
   <meta property="og:url" content="https://www.spartanmultiassistencia.com.br">
   <meta property="og:image" content="https://www.spartanmultiassistencia.com.br/logo.png">
   <title>Spartan Geek MultiAssistência | Conserto e Otimização</title>
+
+  <!-- Tag do Google UNIFICADA (GT + Ads + GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-P3MHG3JX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    /* Base Google Tag */
+    gtag('config', 'GT-P3MHG3JX');
+
+    /* Destinos: Google Ads e GA4 */
+    gtag('config', 'AW-715211596');
+    gtag('config', 'G-YZ2MSNGC8');
+  </script>
+
   <style>
     body {
       background: #121212;
       color: #FFD700;
       text-shadow: 1px 1px 2px #000;
+      margin: 0;
+      font-family: Arial, sans-serif;
     }
     header {
       background: #1a1a1a;
@@ -86,155 +94,50 @@
       text-decoration: none;
       transition: background 0.3s;
     }
-    .whatsapp-button:hover {
-      background: #1ebc59;
-    }
+    .whatsapp-button:hover { background: #1ebc59; }
     .whatsapp-button img {
-    height: 2.5rem;
-    width: 2.5rem;
-    object-fit: contain;
+      height: 2.5rem; width: 2.5rem; object-fit: contain;
     }
-
     .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 0.6rem 1.2rem;
-      border-radius: 50px;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      text-decoration: none;
-      z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-      font-size: 1rem;
+      position: fixed; bottom: 20px; right: 20px;
+      background: #25D366; color: white;
+      padding: 0.6rem 1.2rem; border-radius: 50px;
+      display: flex; align-items: center; gap: 0.5rem;
+      text-decoration: none; z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-size: 1rem;
     }
-    .whatsapp-float img {
-      height: 20px;
-      width: 20px;
-    }
-    .services {
-      background: #1e1e1e;
-      padding: 2rem;
-      text-align: center;
-    }
-    .services h3 {
-      font-size: 3.5rem;
-      color: #FFD700;
-      text-shadow: 1px 1px 2px #000;
-    }
-    .services h2 {
-      font-size: 2rem;
-      color: #FFD700;
-      text-shadow: 1px 1px 2px #000;
-    }
-    .services ul {
-      list-style: none;
-      padding: 0;
-      font-size: 1.1rem;
-    }
-    .services li {
-      margin: 0.5rem 0;
-      color: #FFD700;
-      text-shadow: 1px 1px 2px #000;
-    }
-    .services img {
-      max-width: 100%;
-      height: auto;
-      margin-top: 1.5rem;
-      border-radius: 8px;
-    }
-    .reviews {
-      background: #1a1a1a;
-      color: #fff;
-      padding: 2rem;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      text-shadow: none;
-    }
-    .reviews h3 {
-      font-size: 1.6rem;
-      margin-bottom: 1.5rem;
-    }
-    .carousel {
-      position: relative;
-      max-width: 600px;
-      margin: 0 auto 2rem;
-      overflow: hidden;
-    }
-    .carousel-inner {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 300%;
-    }
-    .carousel-inner > .review {
-      min-width: 100%;
-    }
-    .review {
-      flex: 0 0 100%;
-      padding: 1rem;
-      border-left: 4px solid #25D366;
-      background: #fff;
-    }
-    .review p {
-      margin: 0.5rem 0;
-      font-size: 1.1rem;
-    }
-    footer {
-      background: #1a1a1a;
-      color: #ccc;
-      text-align: center;
-      padding: 1rem;
-    }
-    .pulsate {
-      animation: pulse 1.5s infinite;
-    }
+    .whatsapp-float img { height: 20px; width: 20px; }
+
+    .services { background: #1e1e1e; padding: 2rem; text-align: center; }
+    .services h3 { font-size: 3.5rem; color: #FFD700; text-shadow: 1px 1px 2px #000; }
+    .services h2 { font-size: 2rem; color: #FFD700; text-shadow: 1px 1px 2px #000; }
+    .services ul { list-style: none; padding: 0; font-size: 1.1rem; }
+    .services li { margin: 0.5rem 0; color: #FFD700; text-shadow: 1px 1px 2px #000; }
+    .services img { max-width: 100%; height: auto; margin-top: 1.5rem; border-radius: 8px; }
+
+    .reviews { background: #1a1a1a; color: #fff; padding: 2rem; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.3); text-shadow: none; }
+    .reviews h3 { font-size: 1.6rem; margin-bottom: 1.5rem; }
+    .carousel { position: relative; max-width: 600px; margin: 0 auto 2rem; overflow: hidden; }
+    .carousel-inner { display: flex; transition: transform 0.5s ease-in-out; width: 300%; }
+    .carousel-inner > .review { min-width: 100%; }
+    .review { flex: 0 0 100%; padding: 1rem; border-left: 4px solid #25D366; background: #fff; }
+    .review p { margin: 0.5rem 0; font-size: 1.1rem; }
+
+    footer { background: #1a1a1a; color: #ccc; text-align: center; padding: 1rem; }
+    .pulsate { animation: pulse 1.5s infinite; }
     @keyframes pulse {
       0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
       70% { box-shadow: 0 0 0 10px rgba(37, 211, 102, 0); }
       100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
     }
-    .cta, .services, .reviews {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: all 0.8s ease-out;
-}
-.animate {
-  opacity: 1 !important;
-  transform: translateY(0) !important;
-}
 
+    .cta, .services, .reviews {
+      opacity: 0; transform: translateY(50px); transition: all 0.8s ease-out;
+    }
+    .animate { opacity: 1 !important; transform: translateY(0) !important; }
   </style>
 </head>
 <body>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-715211596">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-715211596');
-</script>
-<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.utils.toArray('.cta, .services, .reviews').forEach(section => {
-    ScrollTrigger.create({
-      trigger: section,
-      start: 'top 80%',
-      onEnter: () => section.classList.add('animate')
-    });
-  });
-</script>
-
-</body>
-</html>
-
 
   <header>
     <div style="text-align:center;">
@@ -243,12 +146,9 @@
     <div style="text-align: center;">
       <h1 style="color: #FFD700; text-shadow: 1px 1px 2px #000;">Spartan Geek MultiAssistência</h1>
       <p style="color: #FFD700; text-shadow: 1px 1px 2px #000;">Transparência, Preço Justo e Agilidade.</p>
-  
       <h2 style="color: #FFD700; text-shadow: 1px 1px 2px #000;">DESDE 2008 - 17 ANOS</h2>
     </div>
   </header>
-  
-  
 
   <section class="cta">
     <h2>Seu PC Gamer, Notebook ou Console Com Performance Máxima</h2>
@@ -257,12 +157,10 @@
       <img src="notebook.png" alt="Notebook mostrando o site da Spartan MultiAssistência">
     </a>
     <div style="text-align:center; margin-top: 1rem;">
-  <div style="text-align:center; margin-top: 1rem;">
-  <a href="https://www.spartangaming.com.br/whatsapp.html" class="whatsapp-button pulsate" target="_blank">
-    <img src="whatsapp.png" alt="WhatsApp"> Atendimento para Macbook & iMac
-  </a>
-</div>
-</div>
+      <a href="https://www.spartangaming.com.br/whatsapp.html" class="whatsapp-button pulsate" target="_blank">
+        <img src="whatsapp.png" alt="WhatsApp"> Atendimento para Macbook & iMac
+      </a>
+    </div>
   </section>
 
   <section class="services" style="color: #FFD700; text-shadow: 1px 1px 2px #000;">
@@ -284,7 +182,7 @@
         <button onclick="prevSlideDesktop()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 0.5rem; cursor: pointer;">&#10094;</button>
         <button onclick="nextSlideDesktop()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 0.5rem; cursor: pointer;">&#10095;</button>
       </div>
-    
+
       <section class="cta">
         <div style="margin-top: 2rem;">
           <a href="https://www.spartangaming.com.br/whatsapp.html" class="whatsapp-button pulsate" target="_blank">
@@ -292,8 +190,9 @@
           </a>
         </div>
       </section>
-    </section>
-  
+    </div>
+  </section>
+
   <section class="services" style="color: #FFD700; text-shadow: 1px 1px 2px #000;">
     <h3>Serviços Para VideoGames/Consoles</h3>
     <h2>Playstation 3, Playstation 4, Playstation 5, Xbox One, Xbox Series S e X, Nintendo Switch Lite, V1, V2 e OLED</h2>
@@ -314,7 +213,7 @@
         <button onclick="prevSlideVideogames()" style="position: absolute; top: 50%; left: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 0.5rem; cursor: pointer;">&#10094;</button>
         <button onclick="nextSlideVideogames()" style="position: absolute; top: 50%; right: 10px; transform: translateY(-50%); background: rgba(0,0,0,0.5); color: white; border: none; padding: 0.5rem; cursor: pointer;">&#10095;</button>
       </div>
-    
+
       <section class="cta">
         <div style="margin-top: 2rem;">
           <a href="https://www.spartangaming.com.br/whatsapp.html" class="whatsapp-button pulsate" target="_blank">
@@ -322,55 +221,12 @@
           </a>
         </div>
       </section>
-    </section>
-      
-      
     </div>
-    
-    <script>
-      let currentIndexDesktop = 0;
-      const carouselDesktop = document.getElementById('carousel-desktop');
-      const totalSlidesDesktop = 10;
-    
-      let currentIndexVideogames = 0;
-      const carouselVideogames = document.getElementById('carousel-videogames');
-      const totalSlidesVideogames = 10;
-    
-      function updateSlideDesktop() {
-        carouselDesktop.style.transform = `translateX(-${currentIndexDesktop * 100}%)`;
-      }
-    
-      function nextSlideDesktop() {
-        currentIndexDesktop = (currentIndexDesktop + 1) % totalSlidesDesktop;
-        updateSlideDesktop();
-      }
-    
-      function prevSlideDesktop() {
-        currentIndexDesktop = (currentIndexDesktop - 1 + totalSlidesDesktop) % totalSlidesDesktop;
-        updateSlideDesktop();
-      }
-    
-      function updateSlideVideogames() {
-        carouselVideogames.style.transform = `translateX(-${currentIndexVideogames * 100}%)`;
-      }
-    
-      function nextSlideVideogames() {
-        currentIndexVideogames = (currentIndexVideogames + 1) % totalSlidesVideogames;
-        updateSlideVideogames();
-      }
-    
-      function prevSlideVideogames() {
-        currentIndexVideogames = (currentIndexVideogames - 1 + totalSlidesVideogames) % totalSlidesVideogames;
-        updateSlideVideogames();
-      }
-    </script>
-    
- 
   </section>
-  
+
   <section class="cta" style="color: #FFD700; text-shadow: 1px 1px 2px #000;">
     <h2>Só um verdadeiro Spartano é capaz de encarar e resolver os desafios do seu PC!</h2>
-    <p>Com força, técnica e tradição desde 2008.</p> Transparência, Preço Justo e Agilidade.</p>
+    <p>Com força, técnica e tradição desde 2008. Transparência, Preço Justo e Agilidade.</p>
     <img src="equipe.png" alt="Equipe técnica especializada" style="max-width: 90%; height: auto; margin: 1rem 0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
     <div style="text-align:center; margin-top: 1rem;">
       <a href="https://www.spartangaming.com.br/whatsapp.html" class="whatsapp-button pulsate" target="_blank">
@@ -378,16 +234,14 @@
       </a>
     </div>
   </section>
-  
 
   <section class="reviews">
-  <h3>O que nossos clientes dizem</h3>
-  <div style="max-width: 100%; margin: 0 auto;">
-    <!-- Elfsight Google Reviews Widget -->
-    <script src="https://static.elfsight.com/platform/platform.js" async></script>
-    <div class="elfsight-app-db062987-2743-4003-bd18-267285bb7ede" data-elfsight-app-lazy></div>
-  </div>
-</section>
+    <h3>O que nossos clientes dizem</h3>
+    <div style="max-width: 100%; margin: 0 auto;">
+      <script src="https://static.elfsight.com/platform/platform.js" async></script>
+      <div class="elfsight-app-db062987-2743-4003-bd18-267285bb7ede" data-elfsight-app-lazy></div>
+    </div>
+  </section>
 
   <section style="background: #1a1a1a; color: #fff; text-align: center; padding: 2rem;">
     <h2 style="font-size: 2rem; margin-bottom: 1.5rem;">Contato</h2>
@@ -415,20 +269,18 @@
     <img src="whatsapp.png" alt="WhatsApp"> Atendimento Rápido
   </a>
 
-<script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
-<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
-<script>
-  gsap.registerPlugin(ScrollTrigger);
-  gsap.utils.toArray('.cta, .services, .reviews').forEach(section => {
-    ScrollTrigger.create({
-      trigger: section,
-      start: 'top 80%',
-      onEnter: () => section.classList.add('animate')
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.utils.toArray('.cta, .services, .reviews').forEach(section => {
+      ScrollTrigger.create({
+        trigger: section,
+        start: 'top 80%',
+        onEnter: () => section.classList.add('animate')
+      });
     });
-  });
-</script>
+  </script>
 
 </body>
 </html>
-
-
