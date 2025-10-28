@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Redirecionando para o WhatsApp...</title>
+  <title>Conectando ao WhatsApp...</title>
 
   <!-- Google Ads tag -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-715211596"></script>
@@ -16,46 +16,71 @@
 
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       background-color: #0d1117;
       color: #f0f6fc;
       text-align: center;
-      margin-top: 100px;
+      margin-top: 120px;
     }
     .loader {
-      border: 5px solid #f0f6fc;
-      border-top: 5px solid #25D366;
+      border: 6px solid #f0f6fc;
+      border-top: 6px solid #25D366;
       border-radius: 50%;
-      width: 50px;
-      height: 50px;
-      margin: 20px auto;
+      width: 70px;
+      height: 70px;
+      margin: 30px auto;
       animation: spin 1s linear infinite;
     }
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
+    h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+    }
+    #countdown {
+      color: #25D366;
+      font-weight: bold;
+      font-size: 26px;
+    }
   </style>
 </head>
 <body>
   <h2>Conectando você ao WhatsApp...</h2>
-  <p>Aguarde um momento, você será redirecionado automaticamente.</p>
   <div class="loader"></div>
+  <p>Você será redirecionado em <span id="countdown">10</span> segundos.</p>
 
   <script>
     // Função para redirecionar
-    function goWpp(){
+    function goWpp() {
       window.location.replace("https://wa.me/552131741531");
     }
 
-    // Dispara a conversão e depois redireciona
+    // Dispara a conversão com callback de redirecionamento
     gtag('event', 'conversion', {
       'send_to': 'AW-715211596/BqUuCLSvscAZEMyGhdUC',
       'event_callback': goWpp
     });
 
-    // Caso o callback falhe, força o redirecionamento após 1,5s
-    setTimeout(goWpp, 3000);
+    // Contagem regressiva de 10 segundos
+    let timeLeft = 10;
+    const countdown = document.getElementById('countdown');
+
+    const timer = setInterval(() => {
+      timeLeft--;
+      countdown.textContent = timeLeft;
+      if (timeLeft <= 0) {
+        clearInterval(timer);
+        goWpp();
+      }
+    }, 1000);
+
+    // Garantia extra: redireciona em 10s mesmo que o callback não dispare
+    setTimeout(goWpp, 10000);
   </script>
 
   <noscript>
