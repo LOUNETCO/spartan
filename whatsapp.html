@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecionando para o WhatsApp...</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-715211596"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-715211596');
+
+    // Evento de conversão do redirecionamento para WhatsApp
+    gtag('event', 'conversion', {
+      'send_to': 'AW-715211596/redirect_wpp'
+    });
+  </script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0d1117;
+      color: #f0f6fc;
+      text-align: center;
+      margin-top: 100px;
+    }
+    .loader {
+      border: 5px solid #f0f6fc;
+      border-top: 5px solid #25D366;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      margin: 20px auto;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <h2>Conectando você ao WhatsApp...</h2>
+  <p>Aguarde um momento, você será redirecionado automaticamente.</p>
+  <div class="loader"></div>
+
+  <script>
+    // Redireciona após 1 segundo
+    setTimeout(function() {
+      window.location.href = "https://wa.me/552131741531";
+    }, 1000);
+  </script>
+</body>
+</html>
