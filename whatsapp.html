@@ -5,13 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Conectando ao WhatsApp...</title>
 
-  <!-- Google Ads tag -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-715211596"></script>
+  <!-- Tag do Google UNIFICADA (GT + Ads + GA4) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GT-P3MHG3JX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag(){ dataLayer.push(arguments); }
     gtag('js', new Date());
+
+    /* Base Google Tag */
+    gtag('config', 'GT-P3MHG3JX');
+
+    /* Destinos: Google Ads e GA4 */
     gtag('config', 'AW-715211596');
+    gtag('config', 'G-YZ2MSNGC8');
   </script>
 
   <style>
@@ -35,18 +41,10 @@
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
     }
-    h2 {
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-    p {
-      font-size: 18px;
-    }
-    #countdown {
-      color: #25D366;
-      font-weight: bold;
-      font-size: 26px;
-    }
+    h2 { font-size: 22px; margin-bottom: 10px; }
+    p { font-size: 18px; }
+    #countdown { color: #25D366; font-weight: bold; font-size: 26px; }
+    a.btn { color:#25D366; text-decoration: underline; }
   </style>
 </head>
 <body>
@@ -55,12 +53,15 @@
   <p>Você será redirecionado em <span id="countdown">10</span> segundos.</p>
 
   <script>
-    // Função para redirecionar
+    // Link do WhatsApp
+    const WPP_URL = "https://wa.me/552131741531";
+
+    // Redirecionamento
     function goWpp() {
-      window.location.replace("https://wa.me/552131741531");
+      window.location.replace(WPP_URL);
     }
 
-    // Dispara a conversão com callback de redirecionamento
+    // Dispara a conversão (page-load) com callback de redirecionamento
     gtag('event', 'conversion', {
       'send_to': 'AW-715211596/BqUuCLSvscAZEMyGhdUC',
       'event_callback': goWpp
@@ -79,12 +80,12 @@
       }
     }, 1000);
 
-    // Garantia extra: redireciona em 10s mesmo que o callback não dispare
+    // Garantia extra: redireciona em 10s mesmo se o callback não disparar
     setTimeout(goWpp, 10000);
   </script>
 
   <noscript>
-    <p>Se não for redirecionado, <a href="https://wa.me/552131741531" style="color:#25D366;">clique aqui</a> para abrir o WhatsApp.</p>
+    <p>Se não for redirecionado, <a href="https://wa.me/552131741531" class="btn">clique aqui</a> para abrir o WhatsApp.</p>
   </noscript>
 </body>
 </html>
